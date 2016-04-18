@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>BillingSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>LandingPage.html</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>Servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--  comment: user servlets -->
+	<servlet>
+		<servlet-name>AddNewUser</servlet-name>
+		<servlet-class>Servlets.AddNewUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddNewUser</servlet-name>
+		<url-pattern>/addNewUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateUser</servlet-name>
+		<servlet-class>Servlets.UpdateUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUser</servlet-name>
+		<url-pattern>/updateUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteUser</servlet-name>
+		<servlet-class>Servlets.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUser</servlet-name>
+		<url-pattern>/deleteUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChangeUserPassword</servlet-name>
+		<servlet-class>Servlets.ChangeUserPasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeUserPassword</servlet-name>
+		<url-pattern>/ChangeUserPassword</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FetchUser</servlet-name>
+		<servlet-class>Servlets.FetchUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FetchUser</servlet-name>
+		<url-pattern>/FetchUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserListServlet</servlet-name>
+		<servlet-class>Servlets.UserListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserListServlet</servlet-name>
+		<url-pattern>/UserListServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Item servlets -->
+	<servlet>
+		<servlet-name>ListItemServlet</servlet-name>
+		<servlet-class>Servlets.ListItemServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListItemServlet</servlet-name>
+		<url-pattern>/ListItemServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	
+	
+		<servlet-name>ModifyCategoryServlet</servlet-name>
+		<servlet-class>Servlets.ModifyCategoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModifyCategoryServlet</servlet-name>
+		<url-pattern>/ModifyCategory</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

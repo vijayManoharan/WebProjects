@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grocery store</title>
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<div class="Page-title">Item Category Management</div>
+
+	<div class="desktop-header">ADD New Category</div>
+	<form action="AddCategoryServlet">
+		<table summary="Enter the values for new Item Category">
+
+			<tr>
+				<td>New item category name</td>
+				<td>:</td>
+				<td><input type="text" name="categoryName"></td>
+			</tr>
+
+			<tr>
+				<td>Category description</td>
+				<td>:</td>
+				<td><input type="text" name="categoryDesc"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" Value="ADD CATEGORY"></td>
+			</tr>
+
+		</table>
+	</form>
+
+	<a href="ListCategory.html">View all Item category</a>
+</body>
+</html>

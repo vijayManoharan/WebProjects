@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grocery store</title>
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="Page-title">Item Category Management</div>
+	<div class="desktop-header">
+		<br> <br>ADD New Item
+	</div>
+
+	<form action="AddItemServlet">
+		<table summary="Enter the values for new Item">
+	
+	private static final String ItemNameLabel= "ItemName";
+	private static final String ItemDescriptionLabel = "ItemDescription";
+	private static final String ItemPriceLabel = "ItemPrice";
+	private static final String ItemCategoryLabel = "ItemCategory";
+	
+			<tr>
+				<td>Item name</td>
+				<td>:</td>
+				<td><input type="text" name="ItemName"></td>
+			</tr>
+
+			<tr>
+				<td>Item description</td>
+				<td>:</td>
+				<td><input type="text" name="ItemDescription"></td>
+			</tr>
+			<tr>
+				<td>Unit Price for Item</td>
+				<td>:</td>
+				<td><input type="text" name="ItemPrice"></td>
+			</tr>
+			<tr>
+				<td>Item category</td>
+				<td>:</td>
+				<td><div w3-include-html="ListCategoryID.html"></div> <script
+						src="w3-include-HTML.js"></script></td>
+			</tr>
+			<tr>
+
+				<td><a href="AddItem.html">
+						<button type="submit"  class ="small"
+							style="vertical-align: middle" onclick="AddItem.html">
+							<span>SUBMIT</span>
+						</button>
+				</a></td>
+
+			</tr>
+
+		</table>
+	</form>
+
+	<a href="ListCategory.html">View all Item category</a>
+</body>
+</html>
